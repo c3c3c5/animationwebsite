@@ -1,0 +1,96 @@
+body {
+    margin: 0px;
+    background-color: aqua;
+}
+
+header {
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 60px;
+    position: relative;
+    border: 5px solid pink;
+}
+
+.dropdownicon {
+    border: 2px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: black;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: left 0.5s ease-in-out;
+    z-index: 1;
+}
+
+.dropdownicon2 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    z-index: 0;
+    left: 50px;
+    transition: left 0s ease-in-out;
+}
+
+.test {
+    left: -100px;
+    background-color: yellow;
+}
+
+@keyframes sidebardropbarmenu {
+    to {left: -28px;}        
+}
+
+.fa-bars {
+    color: white;
+}
+
+.inner {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border: 2px solid pink;
+    width: 300px;
+    gap: 30px;
+    font-family: "arial";
+    color: white;
+    background-color: blue;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.menu {
+    transition: left 0.5s ease-in-out;
+    position: fixed;
+    top: 43px;
+    left: -334px;
+    display: grid;
+    grid-template-columns: 0fr;
+    padding-left: 0px;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#toppart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 1em;
+}
